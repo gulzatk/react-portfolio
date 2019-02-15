@@ -44,13 +44,13 @@ function Header() {
         <br/> 
         <br />
         <div className="link">
-        <Link to="/">Home</Link><br/><br />
-                  <Link to="/">About</Link><br /><br />
-                  <Link to="/">Projects</Link><br /><br />
-                  <Link to="/">Experience</Link><br /><br />
-                  <Link to="/">Interests</Link><br /><br />
-                  <Link to="/">Contact</Link><br /><br />
-              </div>
+          <Link to="/">Home</Link><br/><br />
+          <Link to="/">About</Link><br /><br />
+          <Link to="/">Projects</Link><br /><br />
+          <Link to="/">Experience</Link><br /><br />
+          <Link to="/">Interests</Link><br /><br />
+          <Link to="/">Contact</Link><br /><br />
+        </div>
       </div>
     </div>
   );
