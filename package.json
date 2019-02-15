@@ -20,7 +20,9 @@
   "devDependencies": {
     "eslint": "^4.13.1",
     "eslint-loader": "^2.1.2",
-    "eslint-plugin-react": "^7.12.4"
+    "eslint-plugin-react": "^7.12.4",
+    "file-loader": "^1.1.6",
+    "url-loader": "^0.6.2"
   },
   "scripts": {
     "lint": "eslint src/** src/**/**; exit 0",
