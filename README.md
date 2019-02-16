@@ -8,9 +8,9 @@
 
 This single page application using React. The Portfolio webpage includes information about me (Gulzat KArimova). 
  
- ## Component Structure 
+ ## Component Structure Diagram 
 
- ![sturture](http://url/to/structure.png)
+ ![structure](structure.png)
 
 ## Setup/Installation Requirements
 
