@@ -4,10 +4,20 @@ import PropTypes from 'prop-types';
 function Project(props) {
     return (
         <div>
-            <style
-<h3>{props.projectName}</h3>
+            <style jsx>{`
+            p{
+                font-size: 18px;
+            }
+
+        
+            `}
+           
+            </style>
+            <div class="body">
+<h2>{props.name}</h2>
 <p>{props.description}</p>
-<p>Project link <a href={props.link}></a></p>
+ <a href={props.link}>Project github link</a>
+        </div>
         </div>
 
     )

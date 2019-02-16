@@ -6,16 +6,33 @@ function ProjectList() {
       <div>
           <style jsx>
           {`
-            .body {
-            width: 800px;
-            margin-left: 310px;
-            padding-left: 50px;
-            padding-top: 100px;
-    }
+          .grid-container {
+              grid-template-columns: auto auto;
+              display: grid;
+              margin-left: 320px;
+              margin-top: 30px;
+          }
+
+          .grid-item{
+            border: 2px solid rgba(0, 0, 0, 0.8);
+            background-color: #BFE5F1;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            text-align: center;
+            width: 80%;
+            margin-top: 10px;
+          }
+          h1 {
+               margin-left: 820px;
+            font-family: poppins,Arial,sans-serif;
+          }
+      
           `}</style>
-          
+            <h1>Projects</h1>
+          <div className="grid-container">
             {Projects.map((proj, index) => 
-                <div class="body">
+                <div className="grid-item">
                 <Project name = {proj.projectName}
                 description = {proj.description}
                 link = {proj.link}
@@ -25,7 +42,7 @@ function ProjectList() {
             )}
            
       </div>
-
+        </div>
     )
 }
 
