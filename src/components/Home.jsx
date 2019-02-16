@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import kg from '../images/kg.jpg';
+import homebg from '../images/homebg.jpg';
 
 
 function Home(){
+  // let background = {
+  //   backgroundImage: 'url(' + home + ')',
+  // }
   return (
+    
     <div>
       <style  jsx> {`
     h1 {
@@ -26,6 +31,7 @@ function Home(){
     }
 
     .body {
+     background-image: url(./homebg.jpg)
       width: 500px;
       border: light-grey;
      margin-left: 310px;

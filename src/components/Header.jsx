@@ -47,7 +47,6 @@ function Header() {
           <Link to="/">Home</Link><br/><br />
           <Link to="/about">About</Link><br /><br />
           <Link to="/projects">Projects</Link><br /><br />
-          <Link to="/experience">Experience</Link><br /><br />
           <Link to="/interests">Interests</Link><br /><br />
           <Link to="/contact">Contact</Link><br /><br />
         </div>
