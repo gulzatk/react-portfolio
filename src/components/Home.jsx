@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import water from '../images/men.jpg';
+import kg from '../images/kg.jpg';
 
 
 function Home(){
@@ -35,7 +35,7 @@ function Home(){
     }
 
     #homeImg {
-      height:200px;
+      height:180px;
       width:180px;
       border-radius: 50%;
       padding-left: 150px;
@@ -45,7 +45,7 @@ function Home(){
     `}
       </style>
       <div className="body">
-        <img id="homeImg" src={water}/>
+        <img id="homeImg" src={kg}/>
         <h2>Hello I'm</h2>
         <h1>Gulzat Karimova</h1>
         <p>I am a student at Epicodus Coding bootcamp and junior Web Developer. I changed my carrer yeah ago and I am happy to choose programming. I love coding! </p>
