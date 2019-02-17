@@ -31,7 +31,6 @@ function Home(){
     }
 
     .body {
-     background-image: url(./homebg.jpg)
       width: 500px;
       border: light-grey;
      margin-left: 310px;

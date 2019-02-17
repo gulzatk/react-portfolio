@@ -26,9 +26,9 @@ function Interests() {
             <li>Sport</li>
             <p>(Yoga, Horse riding, swimming, hiking)</p>
             <li>Travel</li>
-            <p>I like to travel differend places and countries. Ecpecially I like to learn different culturies and people all arounfd the world.</p>
+            <p>I like to travel differend places and countries. Especially I like to learn different culturies and people all around the world.</p>
             <li>Sewing </li>
-            <p>I like create new styles and make clothes. This is my hobby. After working I enjoy to sew dresses to my daughter.</p>
+            <p>I like create new styles and make clothes. This is my hobby. After work I enjoy to sew dresses to my daughter.</p>
             <li>Hair Styling</li>
             <p>One of my favorite thing to do is hair styling and cuting. </p>
         </ol>

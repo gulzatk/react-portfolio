@@ -8,7 +8,8 @@ function Header() {
           h2 {
               margin-top: 30%;
               text-align: center;
-              color: red
+              color: blue;
+              font-size: 27px;
               
           }
 
