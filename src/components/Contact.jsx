@@ -3,9 +3,9 @@ import resume from '../images/resume.png';
 
 
 function Contact() {
-    return (
-        <div>
-            <style jsx> {`
+  return (
+    <div>
+      <style jsx> {`
         .body {
             width: 800px;
             margin-left: 310px;
@@ -27,18 +27,18 @@ function Contact() {
 
         `}</style>
 
-            <div className="body">
-                <h2>Contacts</h2>
-                <hr />
-                <p>Email: gulzat.karimova@gmail.com</p>
-                <p><a href='https://github.com/gulzatk'>Github</a></p>
-                <p><a href='https://www.linkedin.com/in/gulzat-karimova/'>LinkedIn</a></p>
-                <h4>Resume:</h4>
-                <img id='resume' src={resume} />
+      <div className="body">
+        <h2>Contacts</h2>
+        <hr />
+        <p>Email: gulzat.karimova@gmail.com</p>
+        <p><a href='https://github.com/gulzatk'>Github</a></p>
+        <p><a href='https://www.linkedin.com/in/gulzat-karimova/'>LinkedIn</a></p>
+        <h4>Resume:</h4>
+        <img id='resume' src={resume} />
             
-            </div>
-        </div>
-    );
+      </div>
+    </div>
+  );
 }
 
 export default Contact;

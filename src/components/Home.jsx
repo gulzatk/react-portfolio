@@ -53,7 +53,7 @@ function Home(){
         <img id="homeImg" src={kg}/>
         <h2>Hello I'm</h2>
         <h1>Gulzat Karimova</h1>
-        <p>I am a student at Epicodus Coding bootcamp and junior Web Developer. I changed my carrer yeah ago and I am happy to choose programming. I love coding! </p>
+        <p>I am a student at Epicodus Coding bootcamp and junior Web Developer. I changed my carrer yeah ago and I am happy to choose programming. </p>
         <Link to="/about">More About Me ></Link>
       </div>
     </div>
