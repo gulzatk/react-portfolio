@@ -1,8 +1,9 @@
 import React from 'react';
 import { v4 } from 'uuid';
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
-function NewProjectForm(props) {
+function NewProjectForm(props)  {
     let _names = null;
     let _description = null;
     let _link = null;
@@ -16,8 +17,18 @@ function NewProjectForm(props) {
     }
 
     return (
-        <div>
+        <div><style jsx>{`
+          .body {
+            width: 800px;
+            margin-left: 310px;
+            padding-left: 50px;
+            padding-top: 100px;
+    }
+        `}</style>
+        <div className="body">
             <form onSubmit={handleNewProjectFormSubmission}>
+            <h1>Add new Project to the list</h1>
+            <hr/>
                 <input
                     type="text"
                     id="names"
@@ -26,6 +37,7 @@ function NewProjectForm(props) {
                         _names = input;
                     }}
                 />
+                <hr/>
                 <input
                     type="text"
                     id="description"
@@ -34,15 +46,18 @@ function NewProjectForm(props) {
                         _description = input;
                     }}
                 />
-                <textarea
+                <hr/>
+                <input
                     id="link"
                     placeholder="github link"
-                    ref={textarea => {
-                        _link = textarea;
+                    ref={input => {
+                        _link = input;
                     }}
                 />
                 <button type="submit">Add a project</button>
-            </form>
+            </form><br></br><hr/>
+            <Link to = '/projects'>Projects</Link>
+        </div>
         </div>
     );
 }
