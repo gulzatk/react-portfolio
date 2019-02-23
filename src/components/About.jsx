@@ -38,6 +38,7 @@ function About() {
           <li>Kyrgyz-Turkish Manas University (Public Relations and Advertising (2009-2014)) </li><br />
           <li>#1 Gymnasium High School (2003-2009)</li><br />
         </ul>
+        
       </div>
     </div>
   );

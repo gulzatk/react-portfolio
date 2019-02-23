@@ -8,6 +8,9 @@ import ProjectList from './ProjectList';
 import Contact from './Contact';
 import Error404 from './Error404';
 import { v4 } from 'uuid';
+import Admin from './Admin';
+import ProjectDetails from './ProjectDetails';
+import NewProjectControl from './NewProjectControl';
 
 class  App extends React.Component {
 
@@ -46,13 +49,20 @@ class  App extends React.Component {
           key: v4(),
         },
         {
-          projectName: 'Pet Search',
+          projectName: 'Math Game',
           description: 'An educational math game geared towards young children learning addition and subtraction. Used Technologies: CSS, HTML, Git, Bootstrap, JQuery, AJAX, CS Animation.',
           link: 'https://github.com/gulzatk/math-game.git',
           key: v4(),
         },
       ]
     };
+    this.handleAddingNewProjectToList = this.handleAddingNewProjectToList.bind(this);
+  }
+
+  handleAddingNewProjectToList(newProject){
+    let newMasterProjectList = this.state.masterProjectList.slice();
+   newMasterProjectList.push(newProject);
+   this.setState({masterProjectList: newMasterProjectList});
   }
 
   render() {
@@ -64,7 +74,10 @@ class  App extends React.Component {
           <Route  path='/about' component={About} />
           <Route path='/interests' component={Interests} />
           <Route path='/projects' render = {() => <ProjectList projectList = {this.state.masterProjectList} /> } />
+          <Route path='/details' render={() => <ProjectDetails projectList={this.state.masterProjectList} />} />
+          <Route path='/newproject' render={() => <NewProjectControl onNewProjectCreation={this.state.handleAddingNewProjectToList} />} />
           <Route path='/contact' component={Contact} />
+          <Route path='/admin' render={() => <Admin projectList={this.state.masterProjectList} /> } />
           <Route component={Error404} />
         </Switch>
       </div>
