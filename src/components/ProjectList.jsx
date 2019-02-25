@@ -2,11 +2,21 @@ import React from 'react';
 import Project from './Project';
 import PropTypes from 'prop-types';
 import {v4} from 'uuid';
+import bg from '../images/bg.png';
 
 
 function ProjectList(props) {
+  var projectStyle = {
+    backgroundImage: 'url(' + bg + ')',
+    height: 700,
+    width: '100%',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+
+  };
   return (
-    <div>
+    <div style={projectStyle}>
       <style jsx>
         {`
           .grid-container {
@@ -18,7 +28,8 @@ function ProjectList(props) {
 
           .grid-item{
             border: 2px solid rgba(0, 0, 0, 0.8);
-            background-color: #BFE5F1;
+            // background-color: #BFE5F1;
+            color:  purple;
             padding: 20px;
             border-radius: 4px;
             margin-bottom: 10px;
@@ -50,11 +61,7 @@ function ProjectList(props) {
 }
 
 ProjectList.propTypes = {
-  projectList: PropTypes.array,
-  projectName: PropTypes.string,
-  description: PropTypes.string,
-  link: PropTypes.string,
-  key: PropTypes.string
+  projectList: PropTypes.array
 };
 
 export default ProjectList;

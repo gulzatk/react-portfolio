@@ -1,12 +1,12 @@
 # Portfolio
 
-#### Independent project for Epicodus, React  week 1, 02/15/2019.
+#### Independent project for Epicodus, React  week 1-2, 02/15/2019-02/23/2019.
 
 ### By Gulzat Karimova
 
 ## Description
 
-This single page application using React. The Portfolio webpage includes information about me (Gulzat KArimova). 
+This single page application using React. The Portfolio webpage includes information about me (Gulzat Karimova). 
  
  ## Component Structure Diagram 
 
@@ -28,6 +28,7 @@ If you have any questions or suggestions please feel free to email me: gulzat.ka
 ## Technologies Used
 * VS Code
 * Javascript
+* React
 * Webpack
 * Node.js
 * Git

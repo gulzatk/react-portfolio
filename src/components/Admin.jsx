@@ -4,26 +4,28 @@ import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 
 function Admin(props) {
-    return (
+  return (
     <div><style jsx>{`
       .body {
-            width: 800px;
+            width: 30%;
             margin-left: 450px;
             padding-left: 50px;
-         background-color: #BFE5F1;
+           
+      
             
     }
     `}</style>
+    <h2 className="body"><Link to='/newproject'>Add new project</Link></h2>
        
-            <ProjectList projectList = {props.projectList} /><br></br>
+    <ProjectList projectList={props.projectList} /> 
      
-       <button className='body'><Link to='/newproject'>Add new project</Link></button><br/><br></br><hr/><br/>
-        </div>
-    );
+           
+    </div>
+  );
 }
 
 Admin.propTypes={
-    projectList: PropTypes.array
-}
+  projectList: PropTypes.array
+};
 
 export default Admin;

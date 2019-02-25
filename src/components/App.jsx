@@ -9,7 +9,6 @@ import Contact from './Contact';
 import Error404 from './Error404';
 import { v4 } from 'uuid';
 import Admin from './Admin';
-import ProjectDetails from './ProjectDetails';
 import NewProjectForm from './NewProjectForm';
 
 class  App extends React.Component {
@@ -61,8 +60,8 @@ class  App extends React.Component {
 
   handleAddingNewProjectToList(newProject){
     let newMasterProjectList = this.state.masterProjectList.slice();
-   newMasterProjectList.push(newProject);
-   this.setState({masterProjectList: newMasterProjectList});
+    newMasterProjectList.push(newProject);
+    this.setState({masterProjectList: newMasterProjectList});
   }
 
   render() {
@@ -74,8 +73,7 @@ class  App extends React.Component {
           <Route  path='/about' component={About} />
           <Route path='/interests' component={Interests} />
           <Route path='/projects' render = {() => <ProjectList projectList = {this.state.masterProjectList} /> } />
-          <Route path='/details' render={() => <ProjectDetails projectList={this.state.masterProjectList} />} />
-          <Route path='/newproject' render={() => <NewProjectForm onNewProjectCreation={this.state.handleAddingNewProjectToList} />} />
+          <Route path='/newproject' render={() => <NewProjectForm onNewProjectCreation={this.handleAddingNewProjectToList}/>} />
           <Route path='/contact' component={Contact} />
           <Route path='/admin' render={() => <Admin projectList={this.state.masterProjectList} /> } />
           <Route component={Error404} />

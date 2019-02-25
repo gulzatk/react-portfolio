@@ -5,23 +5,31 @@ import homebg from '../images/homebg.jpg';
 
 
 function Home(){
-  // let background = {
-  //   backgroundImage: 'url(' + home + ')',
-  // }
+  var homeStyle = {
+    backgroundImage: 'url(' + homebg + ')',
+    height: 700,
+    width: '57%',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    
+  };
   return (
     
     <div>
       <style  jsx> {`
     h1 {
-      text-align:center;
+
       line-height: 1.5;
       font-family: poppins,Arial,sans-serif;
       font-size: 2.2rem;
+      padding-left: 130px;
+      padding-right: 150px;
     }
     h2 {
-
-      text-align:center;
       margin-bottom: .5rem;
+      padding-left: 200px;
+      padding-right: 150px;
       
     }
     p {
@@ -33,7 +41,7 @@ function Home(){
     .body {
       width: 500px;
       border: light-grey;
-     margin-left: 310px;
+     margin-left: 305px;
     //  text-align:center;
     padding-left: 350px;
     padding-top: 100px;
@@ -49,11 +57,11 @@ function Home(){
     }
     `}
       </style>
-      <div className="body">
+      <div className="body" style={homeStyle}>
         <img id="homeImg" src={kg}/>
         <h2>Hello I'm</h2>
         <h1>Gulzat Karimova</h1>
-        <p>I am a student at Epicodus Coding bootcamp and junior Web Developer. I changed my carrer yeah ago and I am happy to choose programming. </p>
+        <p>I am a student at Epicodus Coding bootcamp and junior Web Developer.<br />I changed my carrer yeah ago and I am happy to choose programming. </p>
         <Link to="/about">More About Me ></Link>
       </div>
     </div>
